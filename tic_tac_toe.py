@@ -1,3 +1,9 @@
+def repeat():
+    return print('---------')
+    return print('|', a[0], a[1], a[2], '|')
+    return print('|', a[3], a[4], a[5], '|')
+    return print('|', a[6], a[7], a[8], '|')
+    return print('---------')
 a = '         '
 p = 0
 print('---------')
@@ -34,11 +40,7 @@ while True:
                 print('This cell is occupied! Choose another one!')
                 continue
             a = a[:0] + tracker + a[0+1:]
-            print('---------')
-            print('|', a[0], a[1], a[2], '|')
-            print('|', a[3], a[4], a[5], '|')
-            print('|', a[6], a[7], a[8], '|')
-            print('---------')
+            repeat()
             p += 1
         if user == '1 2':
             if 'X' == a[1]:
@@ -48,11 +50,7 @@ while True:
                 print('This cell is occupied! Choose another one!')
                 continue
             a = a[:1] + tracker + a[1+1:]
-            print('---------')
-            print('|', a[0], a[1], a[2], '|')
-            print('|', a[3], a[4], a[5], '|')
-            print('|', a[6], a[7], a[8], '|')
-            print('---------')
+            repeat()
             p += 1
         if user == '1 3':
             if 'X'== a[2]:
@@ -62,11 +60,7 @@ while True:
                 print('This cell is occupied! Choose another one!')
                 continue
             a = a[:2] + tracker + a[2+1:]
-            print('---------')
-            print('|', a[0], a[1], a[2], '|')
-            print('|', a[3], a[4], a[5], '|')
-            print('|', a[6], a[7], a[8], '|')
-            print('---------')
+            repeat()
             p += 1
         if user == '2 1':
             if 'X' == a[3]:
@@ -76,12 +70,8 @@ while True:
                 print('This cell is occupied! Choose another one!')
                 continue
             a = a[:3] + tracker + a[3+1:]
-            print('---------')
-            print('|', a[0], a[1], a[2], '|')
-            print('|', a[3], a[4], a[5], '|')
-            print('|', a[6], a[7], a[8], '|')
+            repeat()
             p += 1
-            print('---------')
         if user == '2 2':
             if 'X' == a[4]:
                 print('This cell is occupied! Choose another one!')
@@ -90,11 +80,7 @@ while True:
                 print('This cell is occupied! Choose another one!')
                 continue
             a = a[:4] + tracker + a[4+1:]
-            print('---------')
-            print('|', a[0], a[1], a[2], '|')
-            print('|', a[3], a[4], a[5], '|')
-            print('|', a[6], a[7], a[8], '|')
-            print('---------')
+            repeat()
             p += 1
         if user == '2 3':
             if 'X' == a[5]:
@@ -104,11 +90,7 @@ while True:
                 print('This cell is occupied! Choose another one!')
                 continue
             a = a[:5] + tracker + a[5+1:]
-            print('---------')
-            print('|', a[0], a[1], a[2], '|')
-            print('|', a[3], a[4], a[5], '|')
-            print('|', a[6], a[7], a[8], '|')
-            print('---------')
+            repeat()
             p += 1
         if user == '3 1':
             if 'X' == a[6]:
@@ -118,11 +100,7 @@ while True:
                 print('This cell is occupied! Choose another one!')
                 continue
             a = a[:6] + tracker + a[6+1:]
-            print('---------')
-            print('|', a[0], a[1], a[2], '|')
-            print('|', a[3], a[4], a[5], '|')
-            print('|', a[6], a[7], a[8], '|')
-            print('---------')
+            repeat()
             p += 1
         if user == '3 2':
             if 'X' == a[7]:
@@ -132,11 +110,7 @@ while True:
                 print('This cell is occupied! Choose another one!')
                 continue
             a = a[:7] + tracker + a[7+1:]
-            print('---------')
-            print('|', a[0], a[1], a[2], '|')
-            print('|', a[3], a[4], a[5], '|')
-            print('|', a[6], a[7], a[8], '|')
-            print('---------')
+            repeat()
             p += 1
         if user == '3 3':
             if 'X' == a[8]:
@@ -146,11 +120,8 @@ while True:
                 print('This cell is occupied! Choose another one!')
                 continue
             a = a[:8] + tracker + a[8+1:]
-            print('---------')
-            print('|', a[0], a[1], a[2], '|')
-            print('|', a[3], a[4], a[5], '|')
-            print('|', a[6], a[7], a[8], '|')
-            print('---------')
+            repeat()
+            P += 1
         if a[0] == a[1] == a[2] and a[0] != ' ' or\
             a[0] == a[3] == a[6] and a[0] != ' ' or\
                 a[0] == a[4] == a[8] and a[0] != ' ':
